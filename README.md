@@ -7,7 +7,7 @@
 - [x] [提升](https://github.com/KaronAmI/note/issues/4)
 - [x] [作用域闭包](https://github.com/KaronAmI/note/issues/5)
 - [x] [关于this](https://github.com/KaronAmI/note/issues/6)
-- [x] [this 全面解析](https://github.com/KaronAmI/note/issues/7)
+- [x] [this全面解析](https://github.com/KaronAmI/note/issues/7)
 - [x] [对象](https://github.com/KaronAmI/note/issues/8)
 - [x] [混合对象‘类’](https://github.com/KaronAmI/note/issues/9)
 - [x] [原型](https://github.com/KaronAmI/note/issues/10)
