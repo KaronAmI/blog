@@ -1,6 +1,6 @@
 ## 书单
 
-> 整理学习中的知识要点
+> 学习中的知识点，边看边整理
 
 [笔记] 你不知道的JavaScript(上卷)
 - [x] [作用域是什么](https://github.com/KaronAmI/note/issues/1)
