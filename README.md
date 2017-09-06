@@ -17,4 +17,6 @@
 - [x] [类型](https://github.com/KaronAmI/note/issues/12)
 - [x] [值](https://github.com/KaronAmI/note/issues/13)
 - [x] [原生函数](https://github.com/KaronAmI/note/issues/14)
-- [ ] [强制类型转换](https://github.com/KaronAmI/note/issues/15) (整理中)
+- [x] [强制类型转换](https://github.com/KaronAmI/note/issues/15)
+- [ ] [语法](https://github.com/KaronAmI/note/issues/16)
+
