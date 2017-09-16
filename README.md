@@ -18,9 +18,9 @@
 - [x] [值](https://github.com/KaronAmI/note/issues/13)
 - [x] [原生函数](https://github.com/KaronAmI/note/issues/14)
 - [x] [强制类型转换](https://github.com/KaronAmI/note/issues/15)
-- [ ] [语法](https://github.com/KaronAmI/note/issues/16) (整理中)
-- [ ] [异步：现在与未来](https://github.com/KaronAmI/note/issues/17) (整理中)
-- [ ] [回调](https://github.com/KaronAmI/note/issues/18) (整理中)
+- [x] [语法](https://github.com/KaronAmI/note/issues/16)
+- [x] [异步：现在与未来](https://github.com/KaronAmI/note/issues/17)
+- [x] [回调](https://github.com/KaronAmI/note/issues/18)
 
 
 [笔记] git
