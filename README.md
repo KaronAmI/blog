@@ -21,6 +21,7 @@
 - [x] [语法](https://github.com/KaronAmI/note/issues/16)
 - [ ] [异步：现在与未来](https://github.com/KaronAmI/note/issues/17) (整理中)
 - [x] [回调](https://github.com/KaronAmI/note/issues/18)
+- [ ] [Promise](https://github.com/KaronAmI/note/issues/19) (整理中)
 
 
 [笔记] git
