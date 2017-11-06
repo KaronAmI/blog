@@ -2,7 +2,7 @@
 
 > 学习中的知识点，边看边整理
 
-[笔记] 你不知道的JavaScript(上卷)
+[笔记] 你不知道的JavaScript
 - [x] [作用域是什么](https://github.com/KaronAmI/note/issues/1)
 - [x] [词法作用域](https://github.com/KaronAmI/note/issues/2)
 - [x] [函数作用域和块作用域](https://github.com/KaronAmI/note/issues/3)
