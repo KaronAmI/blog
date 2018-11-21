@@ -6,4 +6,4 @@
 - typescript
 - canvas
 - git
-- 疑难杂症
+- 常见问题收录
