@@ -1,9 +1,17 @@
-
-- js 基础
-- 函数式编程
-- react
-- node
-- typescript
-- canvas
-- git
-- 常见问题收录
+* React
+* Redux
+* Fetch
+* Node
+* Webpack
+* Typescript
+* Canvas
+* Vue
+* Git
+* TCP / IP
+* Functional programming
+* Rx
+* RN
+* 设计模式
+* 算法
+* Graphql
+* 疑难杂症
