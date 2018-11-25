@@ -1,13 +1,13 @@
 * React
 * Redux
-* Fetch
 * Node
+* HTTP / TCP / IP
+* Fetch
 * Webpack
 * Typescript
 * Canvas
 * Vue
 * Git
-* TCP / IP
 * Functional programming
 * Rx
 * RN
