@@ -1,6 +1,6 @@
-* React
-* Redux
-* Node
+* 🎈React
+* 🎈Redux
+* 🎈Node
 * HTTP / TCP / IP
 * Fetch
 * Webpack
