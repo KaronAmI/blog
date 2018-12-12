@@ -9,7 +9,7 @@ this 对每个 Jser 都不陌生，经常看到对象这里 this 那里 this，�
 this 指向 window
 
 ```JavaScript
-var name = 'xiaoming'
+var name = 'xiaoming' // 思考，为什么不能用 let 或者 const ？
 function foo () {
   console.log(this.name)
 }
@@ -151,6 +151,18 @@ func() // bar
 **🐿 箭头函数**
 
 ES6 中介绍了一种无法使用这些规则的特殊函数类型：箭头函数，根据外层（函数或者全局）作用域来决定 this，箭头函数常用于回调函数
+
+**🤔 情况 1 中，为什么不能用 let 声明？**
+
+ES6 中，let 命令、const 命令、class 命令声明的全局变量，**不属于顶层对象的属性**，window 无法访问到。var 命令和 function 命令声明的全局变量，**属于顶层对象的属性**，window 能访问到。所以**情况 1** 中改为：
+
+```JavaScript
+let name = 'xiaoming'
+function foo () {
+  console.log(this.name)
+}
+foo() // undefined
+```
 
 ## ❄️ 总结自：
 
