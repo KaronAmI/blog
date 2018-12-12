@@ -168,3 +168,4 @@ foo() // undefined
 
 - 《你不知道的 JavaScript 上卷》第二部分 第 2 章
 - 《Node.js 开发指南》附录 A
+- [《ECMAScript 6 入门》let 和 const 命令 - 顶层对象的属性](http://es6.ruanyifeng.com/#docs/let#%E9%A1%B6%E5%B1%82%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7)
