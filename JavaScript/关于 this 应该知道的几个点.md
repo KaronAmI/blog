@@ -154,7 +154,9 @@ ES6 中介绍了一种无法使用这些规则的特殊函数类型：箭头函�
 
 **🤔 情况 1 中，为什么不能用 let 声明？**
 
-ES6 中，let 命令、const 命令、class 命令声明的全局变量，**不属于顶层对象的属性**，window 无法访问到。var 命令和 function 命令声明的全局变量，**属于顶层对象的属性**，window 能访问到。所以**情况 1** 中改为：
+ES6 中，let 命令、const 命令、class 命令声明的全局变量，**不属于顶层对象的属性**，window 无法访问到。var 命令和 function 命令声明的全局变量，**属于顶层对象的属性**，window 能访问到。
+
+所以 **情况 1** 中改为：
 
 ```JavaScript
 let name = 'xiaoming'
