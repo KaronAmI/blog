@@ -3,14 +3,14 @@
 ### 👨🏻‍💻 JavaScript
 
 1. [对象（上）](https://github.com/KaronAmI/blog/issues/20)
-2. 关于 this 应该知道的几个点 🖋
-
+2. [关于 this 应该知道的几个点](https://github.com/KaronAmI/blog/issues/21)
+3. 原型 🖋
 ---
 
 📋 Todo List:
 
 - [x] 对象（上）
-- [ ] 关于 this 应该知道的几个点
+- [x] 关于 this 应该知道的几个点
 - [ ] 原型
 - [ ] 对象（下）
 - [ ] 函数、作用域
