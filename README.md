@@ -4,15 +4,15 @@
 
 1. [对象（上）](https://github.com/KaronAmI/blog/issues/20)
 2. [关于 this 应该知道的几个点](https://github.com/KaronAmI/blog/issues/21)
-3. 原型（上）🖋
-
+3. [原型（上）](https://github.com/KaronAmI/blog/issues/22)
+4. 原型（下）🖋
 ---
 
 📋 Todo List:
 
 - [x] 对象（上）
 - [x] 关于 this 应该知道的几个点
-- [ ] 原型（上）
+- [x] 原型（上）
 - [ ] 原型（下）
 - [ ] 对象（下）
 - [ ] 函数、作用域
