@@ -62,7 +62,7 @@ jser.getName() // Jon
 
 JavaScript 中，new 的机制实际上和面向类的语言完全不同，构造函数只是一些使用 new 操作符时被调用的函数，它们并不会属于某个类，也不会实例化一个类。
 
-**实际上，内置对象函数在内的所有函数都可以用 new 来调用，所以并不存在所谓的构造函数，只有对于函数进行构造调用**。
+**实际上，除ES6的Symbol()外，所有函数都可以用 new 来调用，所以并不存在所谓的构造函数，只有对于函数进行构造调用**。
 
 使用 new 来调用函数，或者说发生构造函数调用时，会自动执行下面的操作：
 
@@ -171,3 +171,4 @@ foo() // undefined
 - 《你不知道的 JavaScript 上卷》第二部分 第 2 章
 - 《Node.js 开发指南》附录 A
 - [《ECMAScript 6 入门》let 和 const 命令 - 顶层对象的属性](http://es6.ruanyifeng.com/#docs/let#%E9%A1%B6%E5%B1%82%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7)
+- [【进阶3-5期】深度解析 new 原理及模拟实现](https://juejin.im/post/5c11f3aaf265da61441feaec)
