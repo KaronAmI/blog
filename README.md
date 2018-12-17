@@ -2,20 +2,21 @@
 
 ### 👨🏻‍💻 JavaScript
 
-1. [对象（上）](https://github.com/KaronAmI/blog/issues/20)
+1. [对象](https://github.com/KaronAmI/blog/issues/20)
 2. [关于 this 应该知道的几个点](https://github.com/KaronAmI/blog/issues/21)
 3. [原型](https://github.com/KaronAmI/blog/issues/22)
-4. [原型的继承方式收录](https://github.com/KaronAmI/blog/issues/23) 
-5. 对象（下）🖋
+4. [原型的继承方式收录](https://github.com/KaronAmI/blog/issues/23)
+5. class 🖋
+
 ---
 
 📋 Todo List:
 
-- [x] 对象（上）
+- [x] 对象
 - [x] 关于 this 应该知道的几个点
 - [x] 原型
 - [x] 原型的继承方式收录以及各自的优缺点
-- [ ] 对象（下）
+- [ ] class
 - [ ] 函数、作用域
 - [ ] 闭包
 - [ ] 异步、事件循环
