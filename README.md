@@ -5,7 +5,7 @@
 1. [对象](https://github.com/KaronAmI/blog/issues/20)
 2. [关于 this 应该知道的几个点](https://github.com/KaronAmI/blog/issues/21)
 3. [原型](https://github.com/KaronAmI/blog/issues/22)
-4. [原型的继承方式收录](https://github.com/KaronAmI/blog/issues/23)
+4. [原型继承方式收录](https://github.com/KaronAmI/blog/issues/23)
 5. class 🖋
 
 ---
@@ -15,7 +15,7 @@
 - [x] 对象
 - [x] 关于 this 应该知道的几个点
 - [x] 原型
-- [x] 原型的继承方式收录以及各自的优缺点
+- [x] 原型继承方式收录
 - [ ] class
 - [ ] 函数、作用域
 - [ ] 闭包
