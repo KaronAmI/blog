@@ -6,7 +6,8 @@
 2. [关于 this 应该知道的几个点](https://github.com/KaronAmI/blog/issues/21)
 3. [原型](https://github.com/KaronAmI/blog/issues/22)
 4. [原型继承方式收录](https://github.com/KaronAmI/blog/issues/23)
-5. class 🖋
+5. [class](https://github.com/KaronAmI/blog/issues/24)
+6. 函数、作用域 🖋
 
 ---
 
@@ -16,7 +17,7 @@
 - [x] 关于 this 应该知道的几个点
 - [x] 原型
 - [x] 原型继承方式收录
-- [ ] class
+- [x] class
 - [ ] 函数、作用域
 - [ ] 闭包
 - [ ] 异步、事件循环
