@@ -7,7 +7,8 @@
 3. [原型](https://github.com/KaronAmI/blog/issues/22)
 4. [原型继承方式收录](https://github.com/KaronAmI/blog/issues/23)
 5. [class](https://github.com/KaronAmI/blog/issues/24)
-6. 函数、作用域 🖋
+6. [函数、作用域链](https://github.com/KaronAmI/blog/issues/25)
+7. 闭包 🖋
 
 ---
 
@@ -18,7 +19,7 @@
 - [x] 原型
 - [x] 原型继承方式收录
 - [x] class
-- [ ] 函数、作用域
+- [x] 函数、作用域链
 - [ ] 闭包
 - [ ] 异步、事件循环
 - [ ] 回调、Promise
