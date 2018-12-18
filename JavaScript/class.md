@@ -10,7 +10,7 @@ typeof Person // "function"
 Person.prototype.constructor === Person // true
 ```
 
-**🚗 使用**
+## 🚗 使用
 
 用法和使用构造函数一样，通过 new 来生成对象实例
 
@@ -21,7 +21,7 @@ class Person {
 let jon = new Person()
 ```
 
-**🚌 constructor**
+## 🚌 constructor
 
 每个类都必须要有一个 constructor，如果没有显示声明，js 引擎会自动给它添加一个空的构造函数：
 
@@ -37,7 +37,7 @@ class Person {
 }
 ```
 
-**🏎 实例属性和方法，原型属性和方法**
+## 🏎 实例属性和方法，原型属性和方法
 
 定义于 constructor 内的属性和方法，即定义在 this 上，属于实例属性和方法，否则属于原型属性和方法。
 
@@ -58,7 +58,7 @@ jon.hasOwnPrototype('name') // true
 jon.hasOwnPrototype('say') // false
 ```
 
-**🚓 属性表达式**
+## 🚓 属性表达式
 
 ```JavaScript
 let methodName = 'say'
@@ -73,7 +73,7 @@ class Person {
 }
 ```
 
-**🚚 静态方法**
+## 🚚 静态方法
 
 不需要通过实例对象，可以直接通过类来调用的方法，其中的 this 指向类本身
 
@@ -111,11 +111,11 @@ class Sub extends Person {
 Sub.nice() // hello
 ```
 
-**🚜 严格模式**
+## 🚜 严格模式
 
 不需要使用 use strict，因为只要代码写在类和模块内，就只能使用严格模式。
 
-**🏍 提升**
+## 🏍 提升
 
 class 不存在变量提升。
 
@@ -126,7 +126,8 @@ class Person {
 }
 ```
 
-**🚄 name 属性**
+## 🚄 name 属性
+
 name 属性返回了类的名字，即紧跟在 class 后面的名字。
 
 ```JavaScript
@@ -136,11 +137,11 @@ class Person {
 Person.name // Person
 ```
 
-**🚈 this**
+## 🚈 this
 
 默认指向类的实例。
 
-**🚂 取值函数（getter）和存值函数（setter）**
+## 🚂 取值函数（getter）和存值函数（setter）
 
 ```JavaScript
 class Person {
@@ -157,7 +158,7 @@ jon.name = 'jon' // setter jon
 jon.name // getter
 ```
 
-**🛥 class 表达式**
+## 🛥 class 表达式
 
 如果需要，可为类定义一个类内部名字，如果不需要，可以省略：
 

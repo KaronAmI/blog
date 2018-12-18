@@ -2,9 +2,7 @@
 
 this 对每个 Jser 都不陌生，经常看到对象这里 this 那里 this，那什么是 this？答案就是上下文对象，即被调用函数所处的环境，也就是说，this 在函数内部指向了调用它（它指函数函数）的对象，通俗的讲，就是**谁调用了函数**。
 
-## 🐥 常见的几种情况
-
-**🐃 情况 1**
+## 🐃 情况 1
 
 this 指向 window
 
@@ -18,7 +16,7 @@ foo() // xiaoming
 
 谁调用了这个函数，答案就是 window。这好理解，因为这里的变量和函数都是直接挂在 window 上的，等同于 window.foo()。`需注意，严格模式下，this 为 undefined`
 
-**🐏 情况 2**
+## 🐏 情况 2
 
 this 指向一个对象
 
@@ -42,7 +40,7 @@ bar() // xiaoming
 
 如果赋值到另一个变量，就变成 window 调用，所以打印了 xiaoming
 
-**🐎 情况 3**
+## 🐎 情况 3
 
 this 指向了一个用 new 新生成的对象
 
@@ -62,7 +60,7 @@ jser.getName() // Jon
 
 JavaScript 中，new 的机制实际上和面向类的语言完全不同，构造函数只是一些使用 new 操作符时被调用的函数，它们并不会属于某个类，也不会实例化一个类。
 
-**实际上，除ES6的Symbol()外，所有函数都可以用 new 来调用，所以并不存在所谓的构造函数，只有对于函数进行构造调用**。
+**实际上，除 ES6 的 Symbol()外，所有函数都可以用 new 来调用，所以并不存在所谓的构造函数，只有对于函数进行构造调用**。
 
 使用 new 来调用函数，或者说发生构造函数调用时，会自动执行下面的操作：
 
@@ -74,7 +72,7 @@ JavaScript 中，new 的机制实际上和面向类的语言完全不同，构�
 这个例子中，使用 new 来调用 Person(..) 时，我们会构造一个新对象（jser）并把它绑定到 Person(..) 调用中的 this 上。
 或者可以这么想，谁调用了 getName ？就是 jser 调用了，所以 this 指向了 jser
 
-**🦍 情况 4**
+## 🦍 情况 4
 
 用 call，apply 和 bind 来修改 this 指向
 
@@ -144,15 +142,15 @@ func() // bar
 
 综合上述，bind 强制修改了 this，谁调用了函数 this 都不能被修改
 
-**🐓 忽略 this**
+## 🐓 忽略 this
 
 如果你把 null 或者 undefined 作为 this 的绑定对象传入 call、apply 或者 bind，这些值再调用时会被忽略，实际应用的是默认绑定。
 
-**🐿 箭头函数**
+## 🐿 箭头函数
 
 ES6 中介绍了一种无法使用这些规则的特殊函数类型：箭头函数，根据外层（函数或者全局）作用域来决定 this，箭头函数常用于回调函数
 
-**🤔 情况 1 中，为什么不能用 let 声明？**
+## 🐣 情况 1 中，为什么不能用 let 声明？
 
 ES6 中，let 命令、const 命令、class 命令声明的全局变量，**不属于顶层对象的属性**，window 无法访问到。var 命令和 function 命令声明的全局变量，**属于顶层对象的属性**，window 能访问到。
 
@@ -171,4 +169,4 @@ foo() // undefined
 - 《你不知道的 JavaScript 上卷》第二部分 第 2 章
 - 《Node.js 开发指南》附录 A
 - [《ECMAScript 6 入门》let 和 const 命令 - 顶层对象的属性](http://es6.ruanyifeng.com/#docs/let#%E9%A1%B6%E5%B1%82%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7)
-- [【进阶3-5期】深度解析 new 原理及模拟实现](https://juejin.im/post/5c11f3aaf265da61441feaec)
+- [【进阶 3-5 期】深度解析 new 原理及模拟实现](https://juejin.im/post/5c11f3aaf265da61441feaec)
