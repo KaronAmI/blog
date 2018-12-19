@@ -1,6 +1,7 @@
-🔥 本博客以归纳、理解、总结为主，新旧知识都会沉淀在这里，不断回顾和更新，方便自己复习的同时也方便他人参考，如发现其中有问题，请指出，十分感谢。
 
-### JavaScript
+总有看不完的教程，总有学不完的知识，总结下来的，便是自己的
+
+## JavaScript
 
 1. [对象](https://github.com/KaronAmI/blog/issues/20)
 2. [关于 this 应该知道的几个点](https://github.com/KaronAmI/blog/issues/21)
