@@ -8,7 +8,7 @@
 4. [原型继承方式收录](https://github.com/KaronAmI/blog/issues/23)
 5. [class](https://github.com/KaronAmI/blog/issues/24)
 6. [函数、作用域链](https://github.com/KaronAmI/blog/issues/25)
-7. [闭包](https://github.com/KaronAmI/blog/issues/26) 
+7. [闭包](https://github.com/KaronAmI/blog/issues/26)
 8. 变量对象 🖋
 
 ---
@@ -30,49 +30,3 @@
 - [ ] 常用方法收录
 
 ---
-
-### React
-
-### Redux
-
-### Fetch
-
-### Node
-
-### Vue
-
-### 构建工具
-
-### Typescript
-
-### Canvas
-
-### Git
-
-### HTTP
-
-### TCP
-
-### Functional programming
-
-### Rx
-
-### RN
-
-### Graphql
-
-### CSS
-
-### Test
-
-### Flow
-
-### Flutter
-
-### 设计模式
-
-### Vue
-
-### 算法
-
-### 疑难杂症
