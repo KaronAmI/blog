@@ -1,4 +1,4 @@
-# 闭包
+# JS 总结之闭包
 
 从[《函数、作用域链》](https://github.com/KaronAmI/blog/issues/25)一文中知道作用域链的作用，保证了对所有变量对象的有序访问。
 
