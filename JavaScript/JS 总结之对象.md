@@ -99,21 +99,21 @@ play.game // ['dota2']
 
 ```JavaScript
 let name = 'Jon'
-let persion = {name}
+let person = {name}
 // 等同于
-let persion = {name: name}
+let person = {name: name}
 ```
 
 🌗 **对象函数简写**
 
 ```JavaScript
-let persion = {
+let person = {
   say () {
     console.log('hello')
   }
 }
 // 等同于
-let persion = {
+let person = {
   say: function () {
     console.log('hello')
   }
@@ -148,7 +148,7 @@ person['first name'] // 'karon'
 ```JavaScript
 let firstname = 'first name'
 // 报错
-let persion = {
+let person = {
   [firstname]
 }
 ```
