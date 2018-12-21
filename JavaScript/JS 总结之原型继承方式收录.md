@@ -241,5 +241,5 @@ flash instanceof Programmer // true
 
 ## ❄️ 总结自：
 
-- [《JavaScript 深入之继承的多种方式和优缺点》- 冴羽](https://github.com/mqyqingfeng/Blog/issues/16)
-- [《ECMAScript 6 入门》Class 的继承](http://es6.ruanyifeng.com/#docs/class-extends)
+- [《JavaScript 深入之继承的多种方式和优缺点》](https://github.com/mqyqingfeng/Blog/issues/16) by 冴羽
+- [《ECMAScript 6 入门》Class 的继承](http://es6.ruanyifeng.com/#docs/class-extends) by 阮一峰

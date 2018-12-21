@@ -1,13 +1,14 @@
 # JS 总结之对象
 
 我们都知道，对象一般是类的实例，如 Java，Python 等这类面向对象语言，而 JavaScript 中没有类，因此 JavaScript 中的对象不是类的实例，而是基于原型的对象。
+
 JavaScript 中的对象 **Object** 是 7 种内置类型（**number, string, null, undefined, boolean, object, symbol**）之一，是由 key 和 value 组成，value 可以是任意数据类型。
 
 ## 🔨 创建
 
 JavaScript 可以用 **声明形式** 和 **构造形式** 的方式创建对象
 
-**声明形式**
+### 声明形式
 
 ```JavaScript
 let obj = {
@@ -27,7 +28,7 @@ let obj = {
 }
 ```
 
-**构造形式**
+### 构造形式
 
 ```JavaScript
 let obj = new Object()
@@ -64,7 +65,7 @@ obj['first_name'] // 通过 []操作符 访问，Jon
 
 ## 🔧 get/set
 
-**使用 get**
+### **使用 get**
 
 ```JavaScript
 let person = {
@@ -77,7 +78,7 @@ let person = {
 person.age // Jon's age: 18
 ```
 
-**使用 set**
+### **使用 set**
 
 ```JavaScript
 let play = {
@@ -95,7 +96,7 @@ play.game // ['dota2']
 
 ## 🔥 对象的扩展（ES6 / ES7）
 
-🌖 **属性简写**
+### 🌖 属性简写
 
 ```JavaScript
 let name = 'Jon'
@@ -104,7 +105,7 @@ let person = {name}
 let person = {name: name}
 ```
 
-🌗 **对象函数简写**
+### 🌗 对象函数简写
 
 ```JavaScript
 let person = {
@@ -120,21 +121,21 @@ let person = {
 }
 ```
 
-🌒 **属性表达式**
+### 🌒 属性表达式
 
 属性，方法名，getter 和 setter 都支持
 
 ```JavaScript
-let firstname = 'first name'
+let firstName = 'first name'
 let age = 'age'
 let current = 'current'
 let person = {
-  [firstname] : 'Jon',
+  [firstName] : 'Jon',
   get [age] () {
     return 18
   },
   set [current] (name) {
-    this[firstname] = name
+    this[firstName] = name
   }
 }
 person['first name'] // 'Jon'
@@ -146,14 +147,14 @@ person['first name'] // 'karon'
 注意：属性表达式和简写不能同时使用，比如：
 
 ```JavaScript
-let firstname = 'first name'
+let firstName = 'first name'
 // 报错
 let person = {
-  [firstname]
+  [firstName]
 }
 ```
 
-🌘 **属性的遍历**
+### 🌘 属性的遍历
 
 ES6 一共有 5 种方法可以遍历对象的属性。
 
@@ -173,7 +174,7 @@ ES6 一共有 5 种方法可以遍历对象的属性。
 其次遍历所有字符串键，按照加入时间升序排列。
 最后遍历所有 Symbol 键，按照加入时间升序排列。
 
-🌔 **对象解构、扩展运算符**
+### 🌔 对象解构、扩展运算符
 
 ```JavaScript
 let person = {
@@ -236,7 +237,7 @@ let flash = {...person, ...gift}
 flash // {name: 'barry', skill: 'faster'}
 ```
 
-🌕 **新增的常用方法**
+### 🌕 新增的常用方法
 
 - 【es6】Object.is(..)
 
@@ -347,8 +348,8 @@ Object.getOwnPropertyDescriptors(barry)
 
 ## ❄️ 总结自：
 
-- [《ECMAScript 6 入门》对象扩展](http://es6.ruanyifeng.com/?search=get&x=0&y=0#docs/object)
+- [《ECMAScript 6 入门》对象扩展](http://es6.ruanyifeng.com/?search=get&x=0&y=0#docs/object) by 阮一峰
+- [《getter》](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/get) by MDN
+- [《setter》](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/set) by MDN
 - 《你不知道的 JavaScript 下卷》第六章 新增 API - Object
 - 《Node.js 开发指南》附录 A
-- [《MDN 之 getter》](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/get)
-- [《MDN 之 setter》](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/set)

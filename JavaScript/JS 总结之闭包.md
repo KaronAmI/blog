@@ -63,6 +63,8 @@ b()
 
 要彻底明白这个是咋回事，还要再探**活动变量** 、**执行环境**和**作用域链** ，让我们来看看这个例子的执行过程：
 
+### 🍑 执行过程
+
 1. 执行全局代码，创建全局执行环境 globalContext，将全局执行环境推入**环境栈**
 
 ```js
@@ -156,7 +158,7 @@ fn1Context = {
 环境栈 = [globalContext]
 ```
 
-**柳暗花明**
+### 🍓 柳暗花明
 
 当执行函数 b 的时候，创建它的执行环境 fn 早已摧毁（步骤 6），只留下了它的活动变量 `fnContext.AO` 于内存中（步骤 5）：
 
@@ -172,9 +174,9 @@ fn1Context = {
 
 ## ❄️ 总结自：
 
-- 《JavaScript 权威指南》4.2 执行环境及作用域、7.2 闭包
+- [《闭包》](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures) by MDN
+- [《JavaScript 深入之执行上下文》](https://github.com/mqyqingfeng/Blog/issues/8) by 冴羽
+- [《JavaScript 深入之闭包》](https://github.com/mqyqingfeng/Blog/issues/9) by 冴羽
+- [《深入理解 JavaScript 系列（16）：闭包（Closures）》](http://www.cnblogs.com/TomXu/archive/2012/01/31/2330252.html) by 汤姆大叔
+- 《JavaScript 高级程序设计（第 3 版）》4.2 执行环境及作用域、7.2 闭包
 - 《JavaScript 权威指南》8.6 闭包
-- [《MDN 之闭包》](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures)
-- [《JavaScript 深入之执行上下文》- 冴羽](https://github.com/mqyqingfeng/Blog/issues/8)
-- [《JavaScript 深入之闭包》- 冴羽](https://github.com/mqyqingfeng/Blog/issues/9)
-- [《深入理解 JavaScript 系列（16）：闭包（Closures）》- 汤姆大叔](http://www.cnblogs.com/TomXu/archive/2012/01/31/2330252.html)

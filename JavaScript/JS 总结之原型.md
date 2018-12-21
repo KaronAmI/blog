@@ -226,8 +226,8 @@ jon.name // Jon
 
 ## ❄️ 总结自：
 
+- [《JavaScript 深入之从原型到原型链》](https://github.com/mqyqingfeng/Blog/issues/2) by 冴羽
+- [《Object.create()》](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/create) by MDN
+- [《\_ \_proto\_ \_ 》](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/proto) by MDN
 - 《JavaScript 面向对象编程指南（第 2 版）》第 5 章 原型
 - 《Node.js 开发指南》附录 A
-- [《JavaScript 深入之从原型到原型链》- 冴羽](https://github.com/mqyqingfeng/Blog/issues/2)
-- [《MDN 之 Object.create()》](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
-- [《MDN 之 \_ \_proto\_ \_ 》](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)

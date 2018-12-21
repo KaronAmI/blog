@@ -1,4 +1,4 @@
-# JS 总结之class
+# JS 总结之 class
 
 class 是 ES6 的新特性，可以用来定义一个类，实际上，class 只是一种语法糖，它是构造函数的另一种写法。
 
@@ -190,4 +190,4 @@ jon.sayName() //jon
 
 ## ❄️ 总结自：
 
-- [《ECMAScript 6 入门》Class 的基本语法](http://es6.ruanyifeng.com/#docs/class)
+- [《ECMAScript 6 入门》Class 的基本语法](http://es6.ruanyifeng.com/#docs/class) by 阮一峰
