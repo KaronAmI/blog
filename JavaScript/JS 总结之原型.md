@@ -1,6 +1,8 @@
 # JS 总结之原型
 
-在 JavaScript 中，函数也是属于对象，可以像其他对象一样访问属性，其中就有一个属性叫原型 prototype，值为一个对象。默认，**原型有一个 constructor 属性，指向了构造函数本身**。
+在 JavaScript 中，函数也是属于对象，可以像其他对象一样访问属性，其中就有一个属性叫原型 prototype，值为一个对象。
+
+默认，**原型有一个 constructor 属性，指向了构造函数本身**。
 
 ```JavaScript
 function Person () {
@@ -224,7 +226,7 @@ let jon = new Person()
 jon.name // Jon
 ```
 
-## ❄️ 总结自：
+## 🚀 总结自：
 
 - [《JavaScript 深入之从原型到原型链》](https://github.com/mqyqingfeng/Blog/issues/2) by 冴羽
 - [《Object.create()》](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/create) by MDN
