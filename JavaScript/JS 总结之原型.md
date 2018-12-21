@@ -14,7 +14,7 @@ Person.prototype.constructor // ƒ Person() {}
 
 ![prototype and constructor](Image/prototype1.png)
 
-我们可以对这个属性进行操作，但这个属性，只有在对函数进行构造调用的时候才会起作用
+我们可以对这个属性进行操作，但这个属性，只有在对函数进行构造调用的时候才会起作用。
 
 ## 🙂 为原型添加属性和方法
 
@@ -39,6 +39,8 @@ Person.prototype = {
 
 ## 😳 使用
 
+**访问对象原型上的属性**和**访问对象的属性**的方式是一样的：
+
 ```JavaScript
 // ...
 let a = new Person('a')
@@ -49,7 +51,7 @@ a.run() // running
 
 ## 😋 instanceof
 
-用来检测**构造函数的原型**是否存在于**实例的原型链**上
+用来检测**构造函数的原型**是否存在于**实例的原型链**上：
 
 ```JavaScript
 // ...
@@ -73,7 +75,7 @@ jon.hasOwnProperty('name') // true
 jon.hasOwnProperty('age') // false
 ```
 
-age 为原型上的属性，所以为 false
+age 为原型上的属性，所以为 false。
 
 ## 😟 isPrototypeOf
 
@@ -151,7 +153,7 @@ jon.__proto__ // { name: 'people', age: 18 }
 
 ## 😇 原型链
 
-当访问对象的一个属性时，js 引擎会遍历自身对象的属性，如果找不到，便会去**原型**上查找该属性，如果还是找不到，便会继续查找原型的属性，直到到 Object 原型
+当访问对象的一个属性时，js 引擎会遍历自身对象的属性，如果找不到，便会去**原型**上查找该属性，如果还是找不到，便会继续查找原型的属性，直到到 Object 原型。
 
 由于**原型是一个对象**，是对象便会有一个原型，有原型说明存在构造函数，如 Person 例子，查看原型的构造函数是啥：
 
@@ -162,7 +164,7 @@ Person.prototype.__proto__.constructor // ƒ Object() { [native code] }
 Person.prototype.__proto__.constructor === Object // true
 ```
 
-说明 **Object** 是 **Person 原型** 的构造函数
+说明 **Object** 是 **Person 原型** 的构造函数。
 
 说明 **Person 原型** 的 **\_ \_proto\_ \_** 会指向 **Object.prototype**，因为 **\_ \_proto\_ \_** 能快捷访问原型：
 
