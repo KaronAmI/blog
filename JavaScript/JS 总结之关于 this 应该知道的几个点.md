@@ -1,10 +1,12 @@
 # JS 总结之关于 this 应该知道的几个点
 
-JS 中的 this 对每位前端工程师都不陌生，经常看到对象这里 this 那里 this，那什么是 this？答案就是上下文对象，即被调用函数所处的环境，也就是说，this 在函数内部指向了调用函数的对象，通俗的讲，就是**谁调用了函数**。
+JS 中的 this 对每位前端工程师都不陌生，经常看到对象这里 this 那里 this，那什么是 this？答案就是上下文对象，即被调用函数所处的环境，也就是说，this 在函数内部指向了调用函数的对象。
+
+通俗的讲，就是**谁调用了函数**。
 
 ## 🐃 情况 1
 
-**this 指向 window**
+this 指向 window
 
 ```JavaScript
 var name = 'xiaoming' // 思考，为什么不能用 let 或者 const ？
@@ -18,7 +20,7 @@ foo() // xiaoming
 
 ## 🐏 情况 2
 
-**this 指向一个对象**
+this 指向一个对象
 
 ```JavaScript
 var name = 'xiaoming'
@@ -42,7 +44,7 @@ bar() // xiaoming
 
 ## 🐎 情况 3
 
-**this 指向了一个用 new 新生成的对象**
+this 指向了一个用 new 新生成的对象
 
 ```JavaScript
 function Person (name) {
@@ -146,7 +148,7 @@ func() // bar
 
 如果你把 null 或者 undefined 作为 this 的绑定对象传入 call、apply 或者 bind，这些值再调用时会被忽略，实际应用的是默认绑定。
 
-## 🐿 箭头函数
+## 🐆 箭头函数
 
 ES6 中介绍了一种无法使用这些规则的特殊函数类型：箭头函数，根据外层（函数或者全局）作用域来决定 this，箭头函数常用于回调函数
 
@@ -164,7 +166,7 @@ function foo () {
 foo() // undefined
 ```
 
-## ❄️ 总结自：
+## 🚀 总结自：
 
 - [《ECMAScript 6 入门》let 和 const 命令 - 顶层对象的属性](http://es6.ruanyifeng.com/#docs/let#%E9%A1%B6%E5%B1%82%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7) by 阮一峰
 - [《【进阶 3-5 期】深度解析 new 原理及模拟实现》](https://juejin.im/post/5c11f3aaf265da61441feaec) By 木易杨
