@@ -8,7 +8,7 @@ JavaScript 中的对象 **Object** 是 7 种内置类型（**number, string, nul
 
 JavaScript 可以用 **声明形式** 和 **构造形式** 的方式创建对象
 
-### 声明形式
+### 🚄 声明形式
 
 ```JavaScript
 let obj = {
@@ -28,7 +28,7 @@ let obj = {
 }
 ```
 
-### 构造形式
+### 🚈 构造形式
 
 ```JavaScript
 let obj = new Object()
@@ -65,7 +65,7 @@ obj['first_name'] // 通过 []操作符 访问，Jon
 
 ## 🔧 get/set
 
-### **使用 get**
+### 🛥 使用 get
 
 ```JavaScript
 let person = {
@@ -78,7 +78,7 @@ let person = {
 person.age // Jon's age: 18
 ```
 
-### **使用 set**
+### ⛵️ 使用 set
 
 ```JavaScript
 let play = {
@@ -94,9 +94,9 @@ play.game // ['dota2']
 
 涉及 getter 和 setter 的 Object.create()、object.defineProperty()、object.defineProperties() 后待补充
 
-## 🔥 对象的扩展（ES6 / ES7）
+## 🛰 对象的扩展（ES6 / ES7）
 
-### 🌖 属性简写
+### 🚗 属性简写
 
 ```JavaScript
 let name = 'Jon'
@@ -105,7 +105,7 @@ let person = {name}
 let person = {name: name}
 ```
 
-### 🌗 对象函数简写
+### 🚕 对象函数简写
 
 ```JavaScript
 let person = {
@@ -121,7 +121,7 @@ let person = {
 }
 ```
 
-### 🌒 属性表达式
+### 🚙 属性表达式
 
 属性，方法名，getter 和 setter 都支持
 
@@ -154,7 +154,7 @@ let person = {
 }
 ```
 
-### 🌘 属性的遍历
+### 🚌 属性的遍历
 
 ES6 一共有 5 种方法可以遍历对象的属性。
 
@@ -174,7 +174,7 @@ ES6 一共有 5 种方法可以遍历对象的属性。
 其次遍历所有字符串键，按照加入时间升序排列。
 最后遍历所有 Symbol 键，按照加入时间升序排列。
 
-### 🌔 对象解构、扩展运算符
+### 🏎 对象解构、扩展运算符
 
 ```JavaScript
 let person = {
@@ -237,9 +237,9 @@ let flash = {...person, ...gift}
 flash // {name: 'barry', skill: 'faster'}
 ```
 
-### 🌕 新增的常用方法
+### 🚜 新增的常用方法
 
-- 【es6】Object.is(..)
+**【es6】Object.is(..)**
 
 比较两个值是否相同，与 === 严格比较的区别在 +0 与-0，NaN 与 NaN
 
@@ -250,7 +250,7 @@ Object.is(+0, -0) // false
 Object.is(NaN, NaN) // true
 ```
 
-- 【es6】Object.assign(..)
+**【es6】Object.assign(..)**
 
 对象合并，将后面的对象的属性复制给第一个参数，也就是目标对象，需注意：可复制的属性为自身属性和可枚举的属性，继承而来的属性无法被复制，如果是相同属性，后面的会覆盖前面的，举个栗子：
 
@@ -268,7 +268,7 @@ let b = [4, 5]
 Object.assign([], a, b) // [4, 5, 3]
 ```
 
-- 【es6】Object.keys(..)
+**【es6】Object.keys(..)**
 
 遍历自身属性，不含继承属性和 Symbol 属性
 
@@ -277,7 +277,7 @@ let person = { name: 'barry', skill: 'run', [Symbol('skill')]: 'run flash'}
 Object.keys(person) // ['name', 'skill']
 ```
 
-- 【es6】Object.getOwnPropertySymbols(..)
+**【es6】Object.getOwnPropertySymbols(..)**
 
 ```JavaScript
 let person = {
@@ -287,7 +287,7 @@ let person = {
 Object.getOwnPropertySymbols(person) // [Symbol(skill)]
 ```
 
-- 【es7】Object.values(..)
+**【es7】Object.values(..)**
 
 遍历自身属性，不含继承属性和 Symbol 属性
 
@@ -296,7 +296,7 @@ let person = { name: 'barry', skill: 'run', [Symbol('skill')]: 'run flash'}
 Object.values(person) // ['barry', 'run']
 ```
 
-- 【es7】Object.entries(..)
+**【es7】Object.entries(..)**
 
 遍历自身属性，不含继承属性和 Symbol 属性
 
@@ -313,7 +313,7 @@ let personArr = Object.entries(person) // [['name', 'barry'], ['skill', 'run']]
 let personMap = new Map(personArr) // Map { name: 'barry', skill: 'run' }
 ```
 
-- 【es7】Object.fromEntries(..)
+**【es7】Object.fromEntries(..)**
 
 为 Object.entries()的逆操作，用于将一个键值对数组转为对象。
 
@@ -322,8 +322,8 @@ let person = [['name', 'barry'], ['skill', 'run']]
 Object.fromEntries(person) // { name: 'barry', skill: 'run' }
 ```
 
-- 【es7】Object.getOwnPropertyDescriptors(..)
-  获取对象所有自身的属性描述符
+**【es7】Object.getOwnPropertyDescriptors(..)**
+获取对象所有自身的属性描述符
 
 ```JavaScript
 let barry = { name: 'barry', skill: 'run' }
@@ -346,7 +346,7 @@ Object.getOwnPropertyDescriptors(barry)
 
 对应的有：【ES5】的 Object.getOwnPropertyDescriptor(..)
 
-## ❄️ 总结自：
+## 🚀 总结自：
 
 - [《ECMAScript 6 入门》对象扩展](http://es6.ruanyifeng.com/?search=get&x=0&y=0#docs/object) by 阮一峰
 - [《getter》](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/get) by MDN
