@@ -1,8 +1,10 @@
 这一路上走走停停，顺着少年漂流的痕迹 ~
 
-## JavaScript
+# JavaScript
 
-🍓 **总结篇**，序号为推荐的阅读顺序：
+序号为推荐的阅读顺序。
+
+## 🍓 总结篇
 
 1. [JS 总结之对象](https://github.com/KaronAmI/blog/issues/20)
 2. [JS 总结之关于 this 应该知道的几个点](https://github.com/KaronAmI/blog/issues/21)
