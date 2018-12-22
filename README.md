@@ -2,9 +2,7 @@
 
 ## JavaScript
 
-### 🍓 总结篇
-
-序号为推荐的阅读顺序。
+🍓 **总结篇**，序号为推荐的阅读顺序：
 
 1. [JS 总结之对象](https://github.com/KaronAmI/blog/issues/20)
 2. [JS 总结之关于 this 应该知道的几个点](https://github.com/KaronAmI/blog/issues/21)
