@@ -195,7 +195,7 @@ fn1Context = {
 
 `fnContext.AO` 存在 fn1 的作用域链中，所以能访问到**fn1 的词法环境**，这便形成了闭包。因此，闭包是变量对象和作用域链共同作用的结果。
 
-## ❄️ 总结自：
+## ❄️ 参考
 
 - [《闭包》](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures) by MDN
 - [《JavaScript 深入之执行上下文》](https://github.com/mqyqingfeng/Blog/issues/8) by 冴羽

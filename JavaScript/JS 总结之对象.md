@@ -346,7 +346,7 @@ Object.getOwnPropertyDescriptors(barry)
 
 对应的有：【ES5】的 Object.getOwnPropertyDescriptor(..)
 
-## 🚀 总结自：
+## 🚀 参考
 
 - [《ECMAScript 6 入门》对象扩展](http://es6.ruanyifeng.com/?search=get&x=0&y=0#docs/object) by 阮一峰
 - [《getter》](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/get) by MDN

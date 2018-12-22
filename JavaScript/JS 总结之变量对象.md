@@ -34,13 +34,11 @@ ECMAScript 虽然没有指出如何直接访问 Global 对象，但是 **Web 浏
 
 ### ⛹ 函数执行环境
 
-在函数执行环境中，此时由活动对象（ AO ）代替变量对象。活动对象在进入函数执行环境的时创建，通过函数的 arguments 属性初始化。arguments 属性的值是 Arguments 对象。
+在函数执行环境中，VO 不能直接访问，此时由激活对象（Activation Object,缩写为 AO）扮演 VO 的角色。激活对象是在进入函数执行环境时刻被创建的，它通过函数的 arguments 属性初始化。arguments 属性的值是 Arguments 对象。
 
-```js
-VO(functionContext) === AO
-```
+对于 VO 和 AO 的关系可以理解为，VO 在不同的 Execution Context 中会有不同的表现：当在全局执行环境中，可以直接使用 VO；但是，在函数执行环境中，AO 就会被创建。
 
-当函数执行完后，函数执行环境被摧毁，其中的变量对象也会随之摧毁。
+当函数执行完后，函数执行环境被摧毁，变量对象也会随之摧毁。
 
 ## 🥈 处理代码
 
@@ -111,7 +109,8 @@ AO(test) = {
 
 至此，变量对象就生成完毕。
 
-## 🚀 总结自：
+## 🚀 参考
 
 - [深入理解 JavaScript 系列（12）：变量对象（Variable Object）](http://www.cnblogs.com/TomXu/archive/2012/01/16/2309728.html) by 汤姆大叔
+- [JavaScript 的执行上下文](http://www.cnblogs.com/wilber2013/p/4909430.html) by 田小计划
 - 《JavaScript 高级程序设计（第 3 版）》4.2 、5.7.1 、8.1

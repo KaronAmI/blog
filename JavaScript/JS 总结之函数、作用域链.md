@@ -402,7 +402,7 @@ let fn = function (a) {
 3. **不可以使用 arguments**，可以使用 rest 代替
 4. **不可以使用 yield 命令**，因此箭头函数不能用作 Generator 函数。
 
-## 🚀 总结自：
+## 🚀 参考
 
 - [《JavaScript 深入之参数按值传递》](https://github.com/mqyqingfeng/Blog/issues/10) by 冴羽
 - [《ECMAScript 6 入门》函数的扩展 - 箭头函数](http://es6.ruanyifeng.com/#docs/function#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0) by 阮一峰

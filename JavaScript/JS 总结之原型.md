@@ -226,7 +226,7 @@ let jon = new Person()
 jon.name // Jon
 ```
 
-## 🚀 总结自：
+## 🚀 参考
 
 - [《JavaScript 深入之从原型到原型链》](https://github.com/mqyqingfeng/Blog/issues/2) by 冴羽
 - [《Object.create()》](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/create) by MDN

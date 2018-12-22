@@ -188,6 +188,6 @@ let jon = new class {
 jon.sayName() //jon
 ```
 
-## ❄️ 总结自：
+## ❄️ 参考
 
 - [《ECMAScript 6 入门》Class 的基本语法](http://es6.ruanyifeng.com/#docs/class) by 阮一峰

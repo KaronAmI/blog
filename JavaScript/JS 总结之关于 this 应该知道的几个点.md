@@ -166,7 +166,7 @@ function foo () {
 foo() // undefined
 ```
 
-## 🚀 总结自：
+## 🚀 参考
 
 - [《ECMAScript 6 入门》let 和 const 命令 - 顶层对象的属性](http://es6.ruanyifeng.com/#docs/let#%E9%A1%B6%E5%B1%82%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7) by 阮一峰
 - [《【进阶 3-5 期】深度解析 new 原理及模拟实现》](https://juejin.im/post/5c11f3aaf265da61441feaec) By 木易杨
