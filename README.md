@@ -19,5 +19,5 @@
 7. [JS 总结之函数、作用域链](https://github.com/KaronAmI/blog/issues/25)
 8. [JS 总结之闭包](https://github.com/KaronAmI/blog/issues/26)
 9. [JS 总结之执行环境](https://github.com/KaronAmI/blog/issues/28)
-10. JS 总结之异步 🖋
-11. JS 总结之 Promise
+10. [JS 总结之异步](https://github.com/KaronAmI/blog/issues/29)
+11. JS 总结之 Promise 🖋
