@@ -20,5 +20,4 @@
 8. [JS 总结之闭包](https://github.com/KaronAmI/blog/issues/26)
 9. [JS 总结之执行环境](https://github.com/KaronAmI/blog/issues/28)
 10. JS 总结之异步 🖋
-11. JS 总结之事件循环
-12. JS 总结之 Promise
+11. JS 总结之 Promise
