@@ -22,13 +22,13 @@
 
 一旦主线程没任务了，JavaScript 引擎就会去读取任务队列，这个过程会循环不断，被叫做事件循环。
 
-用图表示：
+用图表示：
 
 ![eventLoop](Image/eventLoop.png)
 
 ## 🌩 setTimeout、setInterval
 
-上文讲的定时功能，依靠 setTimeout、setInterval 提供的定时功能，区别在于 setTimeout 在指定时间后执行一次，而 setInterval 则重复执行。
+上文讲的定时功能，依靠 setTimeout、setInterval 提供的定时功能，区别在于 setTimeout 在指定时间后执行一次，而 setInterval 则重复执行。
 
 setTimeout 在任务队列尾部添加了一个事件，在设定的时间后执行。但实际没有这么理想，当任务队列前面的任务非常耗时，回调函数不一定在设置的时间运行。
 
@@ -40,7 +40,7 @@ setTimeout 在任务队列尾部添加了一个事件，在设定的时间后执
 
 JS 的事件循环执行时会区分 task 和 microtask，引擎在每个 task 执行完毕，从队列中取下一个 task 来执行之前，会先执行完所有 microtask 队列中的 microtask。
 
-用图表示：
+用图表示：
 
 ![eventLoop](Image/microtasks.png)
 
