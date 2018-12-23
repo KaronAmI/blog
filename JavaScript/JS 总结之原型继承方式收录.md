@@ -239,7 +239,7 @@ flash instanceof Programmer // true
 
 缺点：新语法，只要部分浏览器支持，需要转为 ES5 代码。
 
-## ❄️ 参考
+## 🚀 参考
 
 - 《JavaScript 高级程序设计（第 3 版）》6.3 继承
 - [《JavaScript 深入之继承的多种方式和优缺点》](https://github.com/mqyqingfeng/Blog/issues/16) by 冴羽
