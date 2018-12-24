@@ -406,4 +406,4 @@ let fn = function (a) {
 
 - [《JavaScript 深入之参数按值传递》](https://github.com/mqyqingfeng/Blog/issues/10) by 冴羽
 - [《ECMAScript 6 入门》函数的扩展 - 箭头函数](http://es6.ruanyifeng.com/#docs/function#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0) by 阮一峰
-- 《JavaScript 高级程序设计》第三章 基本概念、第四章 4.1.3 传递参数、第四章 4.2 执行环境及作用域
+- 《JavaScript 高级程序设计》3 基本概念、4.1.3 传递参数、4.2 执行环境及作用域
