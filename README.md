@@ -2,7 +2,7 @@
 
 # 🚜 前端
 
-规划整理的知识点包括 JavaScript 核心、React、Vue 等。
+规划整理的知识点包括 JavaScript 核心、ES6、ES7、ES8、React、Vue 等。
 
 ## 🚀 JavaScript
 
@@ -15,9 +15,9 @@
 3. [JS 总结之原型](https://github.com/KaronAmI/blog/issues/22)
 4. [JS 总结之 class](https://github.com/KaronAmI/blog/issues/24)
 5. [JS 总结之原型继承方式收录](https://github.com/KaronAmI/blog/issues/23)
-6. [JS 总结之变量对象](https://github.com/KaronAmI/blog/issues/27)
-7. [JS 总结之函数、作用域链](https://github.com/KaronAmI/blog/issues/25)
-8. [JS 总结之闭包](https://github.com/KaronAmI/blog/issues/26)
+6. [JS 总结之函数、作用域链](https://github.com/KaronAmI/blog/issues/25)
+7. [JS 总结之闭包](https://github.com/KaronAmI/blog/issues/26)
+8. [JS 总结之变量对象](https://github.com/KaronAmI/blog/issues/27)
 9. [JS 总结之执行环境](https://github.com/KaronAmI/blog/issues/28)
 10. [JS 总结之异步](https://github.com/KaronAmI/blog/issues/29)
 11. JS 总结之 Promise 🖋
