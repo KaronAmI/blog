@@ -128,7 +128,7 @@ fn(1)
 
 严格模式下，重写 arguments 的值会导致错误。
 
-### 🏸 callee
+### 🏸 callee
 
 通过 callee 这个指针访问拥有这个 arguments 对象的函数
 
