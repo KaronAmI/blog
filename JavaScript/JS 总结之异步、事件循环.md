@@ -38,7 +38,7 @@ setTimeout 在任务队列尾部添加了一个事件，在设定的时间后执
 
 ## ⛈ task 与 microtask
 
-事件循环中，存在一个 task 队列，一个 microtask 队列。
+事件循环中，存在一个 task 队列，一个 microtask 队列。
 
 事件循环会不断的去取 task 队列中最老的一个任务推入js 主线程中执行，当主线程为空的时候，便执行完microtask队列里面的任务。
 
@@ -47,7 +47,7 @@ setTimeout 在任务队列尾部添加了一个事件，在设定的时间后执
 task：
 
 - DOM操作任务：以非阻塞方式插入文档
-- 用户交互任务：鼠标键盘事件、用户输入事件
+- 用户交互任务：鼠标键盘事件、用户输入事件
 - 网络任务
 - IndexDB 数据库操作等 I/O
 - setTimeout / setInterval
@@ -129,9 +129,9 @@ new Promise(solve => {
 
 ### ☘ 问题 1
 
-如果执行 microtask 时又遇到了 microtask 怎么个排序？
+如果执行 microtask 时又遇到了 microtask 怎么个排序？
 
-如果 microtask 在执行过程中遇到了 microtask，会将其放入 microtask 队列后面，一起执行。
+如果 microtask 在执行过程中遇到了 microtask，会将其放入 microtask 队列后面，一起执行。
 
 改下上面的例子：
 
@@ -176,7 +176,7 @@ new Promise(solve => {
 5. 当前 task 执行完毕，执行 microtask 里的任务 callback(4) 打印 4，遇到 new Promise 打印 5，**遇到 callback(6) 被分配到 microtask**
 
 
-6. 主线程继续检查 microtask，发现还有 callback(6) 打印 6
+6. 主线程继续检查 microtask，发现还有 callback(6) 打印 6
 
 第1轮执行完毕，打印：1，3，4，5，6
 
