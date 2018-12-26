@@ -210,7 +210,7 @@ outer.addEventListener('click', onClick)
 | JS stack   |                                     |
 | Log        | click，promise                      |
 
-9. inner 点击触发 outer 点击事件，将 outer onClick 推入 stack 
+9. inner 点击触发 outer 点击事件，将 outer onClick 推入 stack
 
 | Tasks      | dispatch click，setTimeout callback |
 | ---------- | ----------------------------------- |
@@ -258,7 +258,7 @@ outer.addEventListener('click', onClick)
 | JS stack   | Promise then                                             |
 | Log        | click，promise，click，promise                           |
 
-14.  执行完毕，将其推出 stack
+14. 执行完毕，将其推出 stack
 
 | Tasks      | dispatch click，setTimeout callback，setTimeout callback |
 | ---------- | -------------------------------------------------------- |
@@ -266,7 +266,7 @@ outer.addEventListener('click', onClick)
 | JS stack   |                                                          |
 | Log        | click，promise，click，promise                           |
 
-15. 至此，dispatch click 执行完毕，推出dispatch click，完成第一个 task
+15. 至此，dispatch click 执行完毕，推出dispatch click，完成第一个 task
 
 | Tasks      | setTimeout callback，setTimeout callback |
 | ---------- | ---------------------------------------- |
@@ -282,7 +282,7 @@ outer.addEventListener('click', onClick)
 | JS stack   | setTimeout callback                      |
 | Log        | click，promise，click，promise，timeout  |
 
-17.  执行完推出，setTimeout callback
+17. 执行完推出，setTimeout callback
 
 | Tasks      | setTimeout callback                     |
 | ---------- | --------------------------------------- |
@@ -290,7 +290,7 @@ outer.addEventListener('click', onClick)
 | JS stack   |                                         |
 | Log        | click，promise，click，promise，timeout |
 
-18.  检查无待执行的 microtasks，继续下轮 task，推入 stack， 打印 timeout
+18. 检查无待执行的 microtasks，继续下轮 task，推入 stack，打印 timeout
 
 | Tasks      | setTimeout callback                              |
 | ---------- | ------------------------------------------------ |
@@ -299,7 +299,7 @@ outer.addEventListener('click', onClick)
 | Log        | click，promise，click，promise，timeout，timeout |
 
 
-19.  执行完推出，setTimeout callback
+19. 执行完推出，setTimeout callback
 
 | Tasks      |                                                  |
 | ---------- | ------------------------------------------------ |
