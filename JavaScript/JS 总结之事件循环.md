@@ -140,7 +140,11 @@ outer.addEventListener('click', onClick)
 
 运行结果：
 
-<!-- <iframe src="https://codesandbox.io/embed/8l70wz1ow0?expanddevtools=1&view=preview" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe> -->
+[![Edit 8l70wz1ow0](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/8l70wz1ow0?expanddevtools=1&view=preview)
+
+截图：
+
+![image](./Image/microtasks.png)
 
 当点击 inner 后，console 打印：click，promise，click，promise，timeout，timeout。
 
@@ -152,7 +156,7 @@ outer.addEventListener('click', onClick)
 | ---------- | -------------- |
 | Microtasks |                |
 | JS stack   | onClick        |
-| Log         | click          |
+| Log        | click          |
 
 2. 调用函数 onClick
 
@@ -168,7 +172,7 @@ outer.addEventListener('click', onClick)
 | ---------- | -------------- |
 | Microtasks |                |
 | JS stack   | onClick        |
-| Log       | click          |
+| Log        | click          |
 
 4. 遇到 setTimeout，分配进 tasks 队列
 
