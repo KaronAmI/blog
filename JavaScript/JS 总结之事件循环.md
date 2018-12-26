@@ -150,7 +150,7 @@ outer.addEventListener('click', onClick)
 
 **2. 当 stack 为空的时候，便执行完 microtask 队列里面的任务。**
 
-可以在规范 [《html 规范: Cleaning up after a callback step 3》](https://html.spec.whatwg.org/multipage/webappapis.html#clean-up-after-running-a-callback) 中找到:
+可以在规范 [html 规范: Cleaning up after a callback step](https://html.spec.whatwg.org/multipage/webappapis.html#clean-up-after-running-a-callback) 中找到:
 
 > If the JavaScript execution context stack is now empty, perform a microtask checkpoint.
 
