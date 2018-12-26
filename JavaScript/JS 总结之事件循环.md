@@ -85,7 +85,7 @@ microtask：
 - Object.observe
 - process.nextTick（涉及 node，不在这里讨论，但归纳在这）
 
-> Jake Archibald 大大 说：setImmediate is task-queuing, whereas nextTick is before other pending work such as I/O, so it's closer to microtasks.
+> Jake Archibald 大大 说：setImmediate is task-queuing, whereas nextTick is before other pending work such as I/O, so it's closer to microtasks.
 
 ### 🍃 小试牛刀
 
