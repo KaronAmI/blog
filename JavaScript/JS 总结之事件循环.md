@@ -156,7 +156,7 @@ outer.addEventListener('click', onClick)
 | ---------- | -------------- |
 | Microtasks |                |
 | JS stack   | onClick        |
-| Log        | click          |
+| Log        |                |
 
 2. 调用函数 onClick
 
@@ -312,6 +312,10 @@ outer.addEventListener('click', onClick)
 | Log        | click，promise，click，promise，timeout，timeout |
 
 20. 完成，结果为：click，promise，click，promise，timeout，timeout
+
+第一轮执行图：
+
+![第一轮](Image/firstLoop.png)
 
 ## 🚀 参考
 
