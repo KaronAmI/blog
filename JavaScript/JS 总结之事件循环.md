@@ -1,4 +1,4 @@
-# JS 总结之 web 事件循环
+# JS 总结之 事件循环
 
 众所周知，JavaScript 为了避免复杂，被设计成了单线程。
 
@@ -54,7 +54,7 @@ Promise.resolve()
 console.log(5)
 ```
 
-打印出来为：1，5，3，4，2。why? ☃️
+打印出来为：1，5，3，4，2。**why?** ☃️
 
 ### 🌱 初探
 
@@ -219,8 +219,8 @@ inner.click()
 2. 事件循环包含 tasks 队列和 microtasks 队列；
 3. tasks 队列和 microtasks 队列都是按照队列内顺讯执行的，即先进先出；
 4. tasks 之间（执行完 microtask 之后），浏览器可以更新渲染；
-5. microtask 不会打断当前代码执行；
-6. 在 task 执行完之后执行，或者当 stack 为空时， 检查 microtasks 队列并执行其中的任务；
+5. microtasks 不会打断当前代码执行；
+6. 在 task 执行完之后执行，或者当 stack 为空时，检查 microtasks 队列并执行其中的任务；
 7. 新添加的 microtask 添加到队列的末尾并且也会被执行；
 8. 事件循环同一时间内只执行一个任务；
 9. 任务一直执行到完成，不能被其他任务抢断。
@@ -228,7 +228,7 @@ inner.click()
 ## 🚀 参考
 
 - [HTML Living Standard: event-loops](https://html.spec.whatwg.org/multipage/webappapis.html#event-loops) by WHATWG
-- [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/) by Jake
+- [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/) by Jake Archibald
 - [深入探究 eventloop 与浏览器渲染的时序问题](https://github.com/jin5354/404forest/issues/61) by An Yan
 - [JavaScript 运行机制详解：再谈 Event Loop](http://www.ruanyifeng.com/blog/2014/10/event-loop.html) by 阮一峰
 - [这一次，彻底弄懂 JavaScript 执行机制](https://juejin.im/post/59e85eebf265da430d571f89) by ssssyoki
