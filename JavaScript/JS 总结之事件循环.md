@@ -16,11 +16,11 @@
 
 在 stack 之外存在一个**任务队列**。
 
-当异步任务执行完成后，会将一个回调函数（回调函数是在编写异步任务时指定的，用来处理异步的结果）推入**任务队列**，这些回调函数根据类放入到 **task** 和 **microtask** 中，最先被推入的函数先被推入 stack 执行，是先进先出的数据结构。由于有定时器这类功能， stack 一般要检查时间后，某些任务才会被执行。
+当异步任务执行完成后，会将一个回调函数（回调函数是在编写异步任务时指定的，用来处理异步的结果）推入**任务队列**，这些回调函数根据类放入到 **tasks** 和 **microtasks** 中，最先被推入的函数先被推入 stack 执行，是先进先出的数据结构。由于有定时器这类功能， stack 一般要检查时间后，某些任务才会被执行。
 
 ## 🌧 事件循环
 
-一旦 stack 没任务了，JavaScript 引擎就会去读取任务队列，这个过程会循环不断，被叫做事件循环。
+**一旦 stack 没任务了**，JavaScript 引擎就会去读取任务队列，这个过程会循环不断，被叫做事件循环。
 
 ## 🌩 setTimeout、setInterval
 
@@ -58,13 +58,13 @@ console.log(5)
 
 ### 🌱 初探
 
-从上文知道，每个线程都有自己的事件循环，都是独立运行的。事件循环里面有 tasks 队列 和 mircotasks 队列，队列里面都按顺序存放着不同的待执行任务，这些任务从不同源划分的。
+从上文知道，每个线程都有自己的事件循环，都是独立运行的。事件循环里面有 task 队列 和 mircotask 队列，队列里面都按顺序存放着不同的待执行任务，这些任务从不同源划分的。
 
 tasks 包含生成 dom 对象、解析 HTML、执行主线程 js 代码、更改当前 URL 还有其他的一些事件如页面加载、输入、网络事件和定时器事件。从浏览器的角度来看，**tasks 代表一些离散的独立的工作**。当执行完一个 task 后，浏览器可以继续其他的工作如页面重渲染和垃圾回收。
 
 **microtasks 则是完成一些更新应用程序状态的较小任务**，如处理 promise 的回调和 DOM 的修改，这些任务在浏览器重渲染前执行。Microtask 应该以异步的方式尽快执行，其开销比执行一个新的 macrotask 要小。Microtasks 使得我们可以在 UI 重渲染之前执行某些任务，从而避免了不必要的 UI 渲染，这些渲染可能导致显示的应用程序状态不一致。
 
-事件循环持续不断运行，按顺序执行 tasks 队列，如例子中的 setTimeout, 在 tasks 之间，浏览器可以更新渲染。**只要 stack 为空，mircotasks 队列就会处理**，或者**在每个 task 的末尾处理**。在处理 mircotasks 队列期间，**新添加的 microtask 添加到队列的末尾并且也会被执行**，如上文的 Promise then callback。
+事件循环持续不断运行，按顺序执行 task 队列，如例子中的 setTimeout, 在 tasks 之间，浏览器可以更新渲染。**只要 stack 为空，mircotask 队列就会处理**，或者**在每个 task 的末尾处理**。在处理 mircotask 队列期间，**新添加的 microtask 添加到队列的末尾并且也会被执行**，如上文的 Promise then callback。
 
 大概顺序就是：
 
@@ -73,7 +73,7 @@ tasks 包含生成 dom 对象、解析 HTML、执行主线程 js 代码、更改
 
 ### ☘ 源
 
-一般来说，tasks 和 microtask 都有哪些：
+一般来说，task 和 microtask 都有哪些：
 
 task：
 
@@ -107,7 +107,7 @@ microtask：
 
 ### 🍀 运行时机
 
-tasks 按照顺序执行，浏览器可能在它们的间隔渲染视图。
+Tasks 按照顺序执行，浏览器可能在它们的间隔渲染视图。
 
 Microtasks 也是按顺序执行的，执行的顺序，在下面两种情况下执行：
 
@@ -207,7 +207,7 @@ inner.click()
 
 ![loop4](Image/loop4.png)
 
-这个例子与上一个不同，当执行完第 6 步，并没有检查 microtasks 队列，因为 stack 并没为空，script 还在 stack 中。这也说明，上面的规则确保了 microtask 不打断当前代码执行。
+这个例子与上一个不同，当执行完第 6 步，并没有检查 microtask 队列，因为 stack 并没为空，script 还在 stack 中。这也说明，上面的规则确保了 microtasks 不打断当前代码执行。
 
 联系[Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/) 文中的解释：
 
@@ -216,11 +216,11 @@ inner.click()
 ## ⛅️ 总结
 
 1. 事件循环持续不断运行；
-2. 事件循环包含 tasks 队列和 microtasks 队列；
-3. tasks 队列和 microtasks 队列都是按照队列内顺讯执行的，即先进先出；
-4. tasks 之间（执行完 microtask 之后），浏览器可以更新渲染；
+2. 事件循环包含 task 队列和 microtask 队列；
+3. task 队列和 microtask 队列都是按照队列内顺讯执行的，即先进先出；
+4. tasks 之间（执行完 microtasks 之后），浏览器可以更新渲染；
 5. microtasks 不会打断当前代码执行；
-6. 在 task 执行完之后执行，或者当 stack 为空时，检查 microtasks 队列并执行其中的任务；
+6. 在 task 执行完之后执行，或者当 stack 为空时，检查 microtask 队列并执行其中的任务；
 7. 新添加的 microtask 添加到队列的末尾并且也会被执行；
 8. 事件循环同一时间内只执行一个任务；
 9. 任务一直执行到完成，不能被其他任务抢断。
