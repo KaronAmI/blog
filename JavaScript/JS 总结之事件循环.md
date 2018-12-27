@@ -66,6 +66,11 @@ tasks 包含生成 dom 对象、解析 HTML、执行主线程 js 代码、更改
 
 事件循环持续不断运行，按顺序执行 tasks 队列，如例子中的 setTimeout, 在 tasks 之间，浏览器可以更新渲染。**只要 stack 为空，mircotasks 队列就会处理**，或者**在每个 task 的末尾处理**。在处理 mircotasks 队列期间，**新添加的 microtask 添加到队列的末尾并且也会被执行**，如上文的 Promise then callback。
 
+大概顺序就是：
+
+第一轮：检查 task 队列 -> 检查 microtask 队列 -> 检查是否需要渲染更新
+下 1 至 n 轮：...
+
 ### ☘ 源
 
 一般来说，tasks 和 microtask 都有哪些：
@@ -213,7 +218,7 @@ inner.click()
 1. 事件循环持续不断运行；
 2. 事件循环包含 tasks 队列和 microtasks 队列；
 3. tasks 队列和 microtasks 队列都是按照队列内顺讯执行的，即先进先出；
-4. tasks 之间，浏览器可以更新渲染；
+4. tasks 之间（执行完 microtask 之后），浏览器可以更新渲染；
 5. microtask 不会打断当前代码执行；
 6. 在 task 执行完之后执行，或者当 stack 为空时， 检查 microtasks 队列并执行其中的任务；
 7. 新添加的 microtask 添加到队列的末尾并且也会被执行；
