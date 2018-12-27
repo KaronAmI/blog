@@ -135,9 +135,7 @@ inner.addEventListener('click', onClick)
 outer.addEventListener('click', onClick)
 ```
 
-**运行结果**：
-
-[![Edit 8l70wz1ow0](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/8l70wz1ow0)
+在线查看：[Edit on CodeSandBox](https://codesandbox.io/s/8l70wz1ow0)
 
 **截图**：
 
@@ -185,11 +183,7 @@ outer.addEventListener('click', onClick)
 inner.click()
 ```
 
-加上 **inner.click()** 这句，情况变得不一样。
-
-**运行结果**：
-
-[![Edit loop2](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/737l93455q)
+加上 **inner.click()** 这句，情况变得不一样，在线查看：[Edit on CodeSandBox](https://codesandbox.io/s/737l93455q)
 
 **截图**：
 
