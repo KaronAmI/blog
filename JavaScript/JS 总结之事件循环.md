@@ -220,7 +220,7 @@ inner.click()
 3. tasks 队列和 microtasks 队列都是按照队列内顺讯执行的，即先进先出；
 4. tasks 之间（执行完 microtask 之后），浏览器可以更新渲染；
 5. microtask 不会打断当前代码执行；
-6. 在 task 执行完之后执行，或者当 stack 为空时， 检查 microtasks 队列并执行其中的任务；
+6. 在 task 执行完之后执行，或者当 stack 为空时，检查 microtasks 队列并执行其中的任务；
 7. 新添加的 microtask 添加到队列的末尾并且也会被执行；
 8. 事件循环同一时间内只执行一个任务；
 9. 任务一直执行到完成，不能被其他任务抢断。
