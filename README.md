@@ -20,7 +20,4 @@
 8. [JS 总结之变量对象](https://github.com/KaronAmI/blog/issues/27)
 9. [JS 总结之执行环境](https://github.com/KaronAmI/blog/issues/28)
 10. [JS 总结之事件循环](https://github.com/KaronAmI/blog/issues/29)
-
-### 认识篇
-
-- JS 总结之 Promise 🖋
+11. JS 总结之 Promise 🖋
