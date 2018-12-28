@@ -6,6 +6,8 @@
 
 ## JavaScript
 
+### 核心
+
 1. [JS 总结之对象](https://github.com/KaronAmI/blog/issues/20)
 2. [JS 总结之关于 this 应该知道的几个点](https://github.com/KaronAmI/blog/issues/21)
 3. [JS 总结之原型](https://github.com/KaronAmI/blog/issues/22)
@@ -19,9 +21,9 @@
 11. JS 总结之词法作用域与动态作用域
 12. JS 总结之类型
 13. JS 总结之浅拷贝与深拷贝
-14. JS 实战之数组常用的方法
+14. JS 总结之数组常用的方法
 
-## ES6
+### ES6
 
 1. let 与 const
 2. 解构赋值
