@@ -98,9 +98,9 @@ microtask：
 
 尝试分析一下上面的例子：
 
-- Promise then 的回调被分到了 promises 队列中
-- 当打印完 5 后，当前 script 已经执行完毕，开始按顺序执行 promises 队列中的回调，打印了 3
-- 接着遇到了下一个 Promise then 的回调，也会被执行，打印 4，至此，promises 队列已空，开始下一轮 task
+- Promise then 的回调被分到了 microtask 队列中
+- 当打印完 5 后，当前 script 已经执行完毕，开始按顺序执行 microtask 队列中的回调，打印了 3
+- 接着遇到了下一个 Promise then 的回调，也会被执行，打印 4，至此，microtask 队列已空，开始下一轮 task
 - 执行下一个 task，打印 2
 
 所以打印了 1，5，3，4，2
