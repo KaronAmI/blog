@@ -2,7 +2,7 @@
 
 # 前端
 
-规划整理的知识点包括 JavaScript 核心、ES6、ES7、ES8、React、Vue 等。
+规划整理的知识点包括 JavaScript、React、Vue、Node 等。
 
 ## JavaScript
 
@@ -22,16 +22,12 @@
 12. JS 总结之类型
 13. JS 总结之浅拷贝与深拷贝
 14. JS 总结之数组常用的方法
-
-### ES6
-
-1. let 与 const
-2. 解构赋值
-3. Set、Map
-4. [class](https://github.com/KaronAmI/blog/issues/24)
-5. Proxy
-6. Promise
-7. Generator
-8. async / await
-9. Symbol
-10. export / import
+15. JS 总结之解构赋值
+16. JS 总结之 Set、Map
+17. [JS 总结之 class](https://github.com/KaronAmI/blog/issues/24)
+18. JS 总结之 Proxy
+19. JS 总结之 Promise
+20. JS 总结之 Generator
+21. JS 总结之 async / await
+22. JS 总结之 Symbol
+23. JS 总结之 export / import
