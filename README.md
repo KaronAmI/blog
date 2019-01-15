@@ -18,11 +18,11 @@
 8. [JS 总结之执行环境](https://github.com/KaronAmI/blog/issues/28)
 9. [JS 总结之事件循环](https://github.com/KaronAmI/blog/issues/29)
 10. JS 总结之变量
-11. JS 总结之词法作用域与动态作用域
-12. JS 总结之类型
-13. JS 总结之浅拷贝与深拷贝
-14. JS 总结之数组常用的方法
-15. JS 总结之解构赋值
+11. JS 总结之类型
+12. JS 总结之浅拷贝与深拷贝
+13. JS 总结之数组常用的方法
+14. JS 总结之解构赋值
+15. JS 总结之 let / const
 16. JS 总结之 Set、Map
 17. [JS 总结之 class](https://github.com/KaronAmI/blog/issues/24)
 18. JS 总结之 Proxy
