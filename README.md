@@ -17,7 +17,7 @@
 7. [JS 总结之变量对象](https://github.com/KaronAmI/blog/issues/27)
 8. [JS 总结之执行环境](https://github.com/KaronAmI/blog/issues/28)
 9. [JS 总结之事件循环](https://github.com/KaronAmI/blog/issues/29)
-10. JS 总结之变量
+10. [JS 总结之变量](https://github.com/KaronAmI/blog/issues/30)
 11. JS 总结之类型
 12. JS 总结之浅拷贝与深拷贝
 13. JS 总结之数组常用的方法
