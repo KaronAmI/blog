@@ -10,7 +10,7 @@ ECMAScript 的变量是松散类型的，所谓松散类型就是可以用来保
 var a = {
   null: 1 // 极度不推荐
 }
-a.null // 1 
+a.null // 1
 ```
 
 ## var
