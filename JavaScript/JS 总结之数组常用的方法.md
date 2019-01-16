@@ -193,7 +193,7 @@ a.indexOf(2, -3) // 1
 let a = [2, 3, 4, 2, 1, 5]
 //      -6 -5 -4 -3 -2 -1
 
-a.lastIndexOf(2, 6) // 3
+a.lastIndexOf(2, 6) // 3
 a.lastIndexOf(2, 3) // 3
 a.lastIndexOf(2, 3) // 3
 a.lastIndexOf(2, 2) // 0
