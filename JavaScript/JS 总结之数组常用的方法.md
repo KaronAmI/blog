@@ -4,7 +4,7 @@
 
 **用途**：将一个或多个元素添加到**数组的末尾**，并**返回该数组的新长度**。
 
-**语法**：arr.push(element1, …, elementN)
+**语法**：`arr.push(element1, …, elementN)`
 
 **返回**：新的 length 属性值
 
@@ -25,7 +25,7 @@ a 被修改了
 
 **用途**：将一个或者多个元素添加到**数组的开头**，并**返回该数组的新长度**。
 
-**语法**：arr.unshift(element1, …, elementN)
+**语法**：`arr.unshift(element1, …, elementN)`
 
 **返回**：新的 length 属性值
 
@@ -46,7 +46,7 @@ a 被修改了
 
 **用途**：从数组中**删除第一个元素**，并**返回该元素的值**。
 
-**语法**：arr.shift()
+**语法**：`arr.shift()`
 
 **返回**：被删除的元素的值，如果数组为空则返回 undefined
 
@@ -67,7 +67,7 @@ a 被修改了
 
 **用途**：从数组中**删除最后一个元素**，并返回该元素的值。
 
-**语法**：arr.pop()
+**语法**：`arr.pop()`
 
 **返回**：被删除的元素的值，如果数组为空则返回 undefined
 
@@ -88,7 +88,7 @@ a 被修改了
 
 **用途**：将数组中的位置颠倒。
 
-**语法**：arr.reverse()
+**语法**：`arr.reverse()`
 
 **返回**：该数组的引用
 
@@ -112,7 +112,7 @@ a 被修改了
 
 **用途**：合并两个或多个数组。
 
-**语法**：var new_array = old_array.concat(value1[, value2[, ...[, valueN]]])
+**语法**：`var new_array = old_array.concat(value1[, value2[, ...[, valueN]]])`
 
 **返回**：该数组的引用
 
@@ -137,7 +137,7 @@ console.log(c) // [[1, 2]]
 
 **用途**：返回在数组中可以找到一个给定元素的第一个索引，如果不存在，则返回-1。
 
-**语法**：arr.indexOf(searchElement[, fromIndex = 0])
+**语法**：`arr.indexOf(searchElement[, fromIndex = 0])`
 
 **参数**：
 
@@ -168,7 +168,7 @@ a.indexOf(2, -3) // 1
 
 **用途**：返回指定元素在数组中的最后一个的引索，如果不存在则返回-1，从 fromIndex 处开始。
 
-**语法**：arr.lastIndexOf(searchElement[, fromIndex = arr.length - 1])
+**语法**：`arr.lastIndexOf(searchElement[, fromIndex = arr.length - 1])`
 
 **参数**：
 
@@ -205,7 +205,7 @@ a.lastIndexOf(2, -4) // -4 处已经找不到 2了，返回前面的2的引索 0
 
 **用途**：由 begin 和 end（不包括 end）决定的原数组的**浅拷贝**，**返回一个新的数组对象**。
 
-**语法**：arr.slice(begin, end)
+**语法**：`arr.slice(begin, end)`
 
 **参数**：
 
@@ -232,7 +232,7 @@ a.slice(-4) // 提取 2 3 4 5 位置的元素，得：[4, 2, 1, 5]
 
 **用途**：通过删除现有元素或者添加新元素来修改原数组，如果删除便返回删除的数组，如果添加便返回空数组
 
-**语法**：array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
+**语法**：`array.splice(start[, deleteCount[, item1[, item2[, ...]]]])`
 
 **参数**：
 
@@ -283,6 +283,62 @@ console.log(a) // [2, 3, 4, 2, 1, 'a', 5]
 ```
 
 ## forEach
+
+**用途**：对数组的每个元素执行一次提供的函数
+
+**语法**：
+
+```js
+array.forEach(callback(currentValue, index, array){
+    //do something
+}, this)
+
+array.forEach(callback[, thisArg])
+```
+
+**参数**：
+
+- callback
+
+  1. currentValue： 正在处理的当前元素
+  2. index **可选**： 正在处理的当前元素的引索
+  3. array **可选**：正在操作的数组
+
+- thisArg **可选**
+  - 可选的参数。当执行回调函数时用作 this 的值
+
+**返回值**：undefined
+
+** 注意**：
+
+1. 调用 forEach 后添加到数组中的项不会被 callback 访问到
+2. 已删除的项不会被遍历到
+3. 如果已经存在的值被改变，则传递给 callback 的值是 forEach 遍历到他们那一刻的值。
+
+**示例**：
+
+基本用法
+
+```js
+let a = [2, 3, 4, 2, 1, 5]
+a.forEach(function cb(currentValue, index, array) {
+  console.log(currentValue, index, array)
+})
+```
+
+```js
+function Counter() {
+  this.sum = 0
+}
+Counter.prototype.add = function(array) {
+  array.forEach(function(entry) {
+    this.sum += entry
+  }, this) // this 指向 obj
+}
+let obj = new Counter()
+obj.add([1, 2, 3])
+obj.sum // 6
+```
 
 ## map
 
